@@ -1,0 +1,69 @@
+.color-green {
+	color: rgb(46, 189, 133) !important;
+}
+.color-red {
+	color: rgb(224, 41, 74) !important;
+}
+.border-red {
+	border-color: rgba(224, 41, 74,.25) !important;
+}
+.border-red:hover {
+	border-color: rgba(224, 41, 74,1) !important;
+}
+.border-green {
+	border-color: rgba(46, 189, 133,.25) !important;
+}
+.border-green:hover {
+	border-color: rgba(46, 189, 133,1) !important;
+}
+.border-gold {
+	border-color: rgba(189, 133, 46,.25) !important;
+}
+.border-gold:hover {
+	border-color: rgba(189, 133, 46,.75) !important;
+}
+.border-gray {
+	border-color: rgba(0, 0, 0,.15) !important;
+}
+.border-gray:hover {
+	border-color: rgba(0, 0, 0,.75) !important;
+}
+.active-token {
+	border-color: rgba(0, 0, 0,.75) !important;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.no-wrap {
+	white-space: nowrap !important;
+}
+.txt-sm {
+	font-size: .8em;
+}
+.txt-center {
+	text-align: center;
+}
+.txt-left {
+	text-align: left;
+}
+.txt-right {
+	text-align: right;
+}
+
+.mt-shadow {
+	box-shadow:  0 -3px 6px 0px rgba(0,0,0,.075);
+}
+.mt-border {
+	border-radius: 5px;
+}
+.transparentful {
+	opacity: .15;
+}
+.transparent {
+	opacity: .25;
+}
+@media (min-width: 940px) {
+
+}

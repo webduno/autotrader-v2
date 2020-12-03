@@ -1,0 +1,239 @@
+<template class="task-template">
+  <section id="make-trade-section" class="section js-section u-category-trading">
+    <!-- <header class="section-header">
+      <div class="section-wrapper">
+        <h1>
+          Trading
+        </h1>
+
+        <p>Go to <a href="https://www.binance.com/en/futures/ref/46917797">Binance (futures)</a> in your browser.</p>
+      </div>
+    </header> -->
+
+    <div class="demo mb-0 pb-0">
+      <div class="demo-wrapper mb-0 pb-0">
+        <h1 class="mb-0 pb-0">
+          <i class="fa fa-handshake"></i>
+          Make Trade
+          <small class=" px-2 txt-sm color-gold">x50</small>
+          <br>
+          <span class="demo-meta">All leverage levels should be <b class="pl-1">x50</b>.</span>
+        </h1>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="demo mt-4">
+      <div class="demo-wrapper">
+
+        <div class="row center-xs middle w-100" id="trade-tokens">
+          <div class="col">
+            <small data-token="btc" id="token-btc" data-click="setToken" class="data-clicker demo-button border-gray px-2 txt-sm active-token">BTC</small>
+          </div>
+          <div class="col">
+            <small data-token="eth" id="token-eth" data-click="setToken" class="data-clicker demo-button border-gray px-2 txt-sm">ETH</small>
+          </div>
+          <div class="col">
+            <small data-token="yfi" id="token-yfi" data-click="setToken" class="data-clicker demo-button border-gray px-2 txt-sm">YFI</small>
+          </div>
+          <div class="col">
+            <small data-token="uni" id="token-uni" data-click="setToken" class="data-clicker demo-button border-gray px-2 txt-sm">UNI</small>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-xs-12 col-lg row">
+            <div class="col-xs-6">
+              <h3 class="demo-controls row middle-xs center-xs row-xs">
+                <span class="col-xs-12" style="">
+                  Price <br> <span class="demo-meta">Leave blank for market price.</span>
+                </span>
+                <div class="col-xs-12" style="position: relative;">
+                  <i class="fa fa-lg transparentful data-clicker fa-times" style="position: absolute; top: 50%; transform: translateY(-50%); right: 30px"
+                  data-click="clearPriceInput"></i>
+                  <input type="text" name="tradePrice" id="input-tradePrice" class="demo-input inputGroup-input data-watcher w-100" data-watch="priceChanged">
+                  <!-- <input type="text" name="trade-quantity" class="demo-input" style="flex: 1;"> -->
+                </div>
+                <span id="label-error-form-price" class="color-red demo-meta col-xs-12"></span>
+                <span class="col-xs-12" style="">
+                  <div class="no-wrap data-clicker" data-side="buy" data-click="refreshPrice">
+                    <i class="fa fa-xs fa-sync-alt mr-1" id="refreshPrice-button"></i>
+                    <span>REFRESH PRICE</span>
+                  </div>
+                </span>
+              </h3>
+              <div class="demo-controls">
+                <input class="data-clicker" type="checkbox" data-click="makeTradeChange"  name="" checked id="trade-execute-makeTrade">
+                <label for="trade-execute-makeTrade">Make trade at price.</label>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <h3 class="demo-controls row center-xs middle-xs">
+                <span class="col-xs-12">
+                  Quantity <br> <span class="demo-meta">Change min and max in settings.</span>
+                </span>
+                <!-- <span class="demo-meta">Leave blank for $1.</span> -->
+                
+                <div class="col-xs-12 row middle-xs">
+                  <!-- <input type="checkbox" name="" checked id="trade-execute-makeTrade" class="col-xs-1 txt-right">
+                  <label class="col-xs-2 demo-meta  txt-left ma-0" for="trade-execute-makeTrade">Make trade</label> -->
+                  <div class="col-xs-6 px-0 mx-0">
+                    <input type="range" min="1" max="10" step="1" class="w-100 demo-input data-watcher" name="trade-quantity" id="input-tradeQuantity" data-watch="quantityChanged" value="1" >
+                  </div>
+                  <div class="col-xs-6 px-0 mx-0">
+                    <h3 id="label-error-form-quantity" class="demo-button txt-left color-gray border-gray ma-0">$1</h3>
+                  </div>
+                </div>
+              </h3>
+              <div class="demo-controls row middle-xs start-xs">
+                <div class="col-xs-4 no-wrap pa-0 ma-0">
+                  <input class="data-watcher" type="checkbox" checked id="input-tradeHasProfit" data-watch="setHasProfit">
+                  <label for="input-tradeHasProfit">Set Profit</label>
+                </div>
+                <div class="col-xs-3 txt-center">
+                  <h2 id="label-error-form-profit">0.4</h2>
+                </div>
+                <div class="col-xs-5 pa-0 ma-0">
+                  <input class=" demo-input data-watcher w-100" data-watch="setProfit" type="range" min="0" max="2" step=".1" id="input-tradeProfit" value=".4">
+                </div>
+              </div>
+              <div class="demo-controls row middle-xs start-xs">
+                <div class="col-xs-4 no-wrap pa-0 ma-0">
+                  <input class="data-watcher" type="checkbox" checked id="input-tradeHasLoss" data-watch="setHasLoss">
+                  <label class="" for="input-tradeHasLoss">Set Loss</label>
+                </div>
+                <div class="col-xs-3 txt-center">
+                  <h2 id="label-error-form-loss">0.2</h2>
+                </div>
+                <div class="col-xs-5 pa-0 ma-0">
+                  <input class="demo-input data-watcher w-100" data-watch="setLoss" type="range" min="0" max="2" step=".1" id="input-tradeLoss" value=".2" >
+                </div>
+              </div>
+                
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-7">
+            <h3 class="ma-2 mt-0"> Preview </h3>
+            <div class="px-0">
+              <div style="box-shadow:  0 -3px 6px 0px rgba(0,0,0,.075); padding: 30px">
+                <div class="row end-xs">
+                  <span class="col-xs">
+                      <!-- <div class="col-xs demo-meta no-wrap data-clicker" data-side="buy" data-click="refreshPrice">
+                        <i class="fa fa-xs fa-sync-alt mr-1" id="refreshPrice-button"></i>
+                        <span>Refresh Price</span>
+                      </div> -->
+                      <span class="col-xs demo-meta">price: <b id="card-label-price"></b></span>
+                      <span class="col-xs demo-meta">
+                        <span class="pr-1">quantity:</span> $<b id="card-label-balance" class="pr-1"></b>
+                        (<b id="card-label-quantity"></b>)
+                      </span>
+                  </span>
+                </div>
+                <hr class="transparentful">
+                <div class="row">
+                  <span class="col-xs-2 row center-xs middle-xs mt-shadow mx-3 mt-border" id="card-label-side">
+                  </span>
+                  <span class="col-xs">
+                    <div class="row between-xs">
+                      <span class="col-xs-2 demo-meta"></span>
+                      <span class="col-xs-3  demo-meta">price</span>
+                      <span class="col-xs-2  demo-meta">%</span>
+                      <span class="col-xs-2 txt-center demo-meta no-wrap">goal</span>
+                      <span class="col-xs-3 txt-center demo-meta">$</span>
+                    </div>
+                    <div class="row between-xs">
+                      <span class="col-xs-2">Profit:</span>
+                      <span class="col-xs-3 " id="card-label-profit-price">-</span>
+                      <span class="col-xs-2 demo-meta" id="card-label-profit-percent">-</span>
+                      <span class="col-xs-2 demo-meta" id="card-label-profit-pnl">-</span>
+                      <span class="col-xs-3 txt-center" ><b class="color-green" id="card-label-profit-balance">-</b></span>
+                    </div>
+                    <div class="row between-xs">
+                      <span class="col-xs-2 demo-meta">trade:</span>
+                      <span class="col-xs-3 demo-meta" id="card-label-price1">-</span>
+                      <span class="col-xs-2 demo-meta"></span>
+                      <span class="col-xs-2 demo-meta"></span>
+                      <span class="col-xs-3 demo-meta"></span>
+                    </div>
+                    <div class="row between-xs">
+                      <span class="col-xs-2 ">Loss:</span>
+                      <span class="col-xs-3 " id="card-label-loss-price">-</span>
+                      <span class="col-xs-2 demo-meta" id="card-label-loss-percent">-</span>
+                      <span class="col-xs-2 demo-meta" id="card-label-loss-pnl">-</span>
+                      <span class="col-xs-3 txt-center" ><b class="color-red" id="card-label-loss-balance">-</b></span>
+                    </div>
+                  </span>
+
+                </div>
+                <!-- <span style="display: flex; justify-content: start; flex-direction: column; align-items: center;" id="trade-input-msg">
+                  <p>Waiting for trade...</p>
+                  <i class="fas transparentful demo-meta fa-8x fa-circle-notch  fa-spin"></i>
+                </span>
+                <span style="background: red" id="trade-orders-msg"></span> -->
+              </div>
+              <div class="row center-xs" >
+                  <!-- <div class="col-xs-12 row start-xs">
+                    <div class="no-wrap data-clicker" data-side="buy" data-click="refreshPrice">
+                      <i class="fa fa-xs fa-sync-alt mr-1" id="refreshPrice-button"></i>
+                      <span>REFRESH PRICE</span>
+                    </div>
+                  </div> -->
+                  <h2 >
+                    <div class="demo-button color-green border-green no-wrap data-clicker" id="trade-execute-buy" data-side="buy" data-click="setSide">
+                      <i class="fa fa-xs fa-arrow-up mr-1"></i>
+                      <span>Buy</span>
+                    </div>
+                  </h2>
+                  <h2 >
+                    <div class="demo-button color-red border-red no-wrap data-clicker" id="trade-execute-sell" data-side="sell" data-click="setSide">
+                      <i class="fa fa-xs fa-arrow-down mr-1"></i>
+                      <span>Sell</span>
+                    </div>
+                  </h2>
+              </div>
+              <h4 class="demo-controls">
+                <input type="checkbox" name="" id="trade-execute-confirm">
+                <label class="color-red" for="trade-execute-confirm">Check to confirm and send.</label>
+              </h4>
+              <div class="mt-5 border-gold demo-button txt-center data-clicker" data-click="sendBatchOrder">send</div>
+            </div>
+          </div>
+
+          <!-- <div class="col-xs-12 col-lg-7">
+            <h1 class="mb-2">
+              <div class="demo-controls" style="display: flex; flex-direction: column; justify-content: center;">
+                <span class="">Result</span>
+              </div>
+            </h1>
+            <div class="px-0">
+              <div style="box-shadow:  0 -3px 6px 0px rgba(0,0,0,.075); padding: 30px">
+                <div class="row">
+                  <span class="col-xs-2 row center-xs middle-xs mt-shadow mx-3 mt-border" id="trade-info-side"></span>
+
+                  <span class="col-xs" id="trade-info-msg"></span>
+                </div>
+                <span style="display: flex; justify-content: start; flex-direction: column; align-items: center;" id="trade-input-msg">
+                  <p>Waiting for trade...</p>
+                  <i class="fas transparentful demo-meta fa-8x fa-circle-notch  fa-spin"></i>
+                </span>
+                <span style="background: red" id="trade-orders-msg"></span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <h2 id="card-label-info" style="width: 100%; overflow: auto;">
+          
+        </h2>
+        <span id="trade-execute-msg" style="display: none"></span>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      require('./renderer-process/trading/make-trade')
+    </script>
+
+  </section>
+</template>

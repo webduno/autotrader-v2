@@ -1,0 +1,51 @@
+<template class="task-template">
+  <section id="get-orders-section" class="section js-section u-category-trading">
+    <!-- <header class="section-header">
+      <div class="section-wrapper">
+        <h1>
+          Active Orders
+        </h1>
+
+        <p>Go to <a href="https://www.binance.com/en/futures/ref/46917797">Binance (futures)</a> in your browser.</p>
+        <p>Go to <a href="https://www.binance.com/en/my/orders/futures/tradehistory">trade history (futures)</a> in your browser.</p>
+      </div>
+    </header> -->
+
+    <div class="demo">
+      <div class="demo-wrapper">
+        <h1>
+          <i class="fa fa-list"></i>
+          Open Orders
+        </h1>
+        <!-- <h3>The <code>desktopCapturer</code> module in Electron can be used to access any media, such as audio, video, screen and window, that is available through the <code>getUserMedia</code> web API in Chromium.</h3> -->
+        <hr>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo-wrapper">
+        <h1>
+          Symbol
+          <div class="demo-controls" style="display: flex; flex-direction: row; justify-content: space-between;">
+            <input type="text" name="" class="demo-input" style="flex: 1">
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+              <button class="demo-button data-clicker" data-click="refreshList" id="order-list-refresh">Refresh</button>
+              <button class="demo-button data-clicker" data-click="cancelAll" id="order-list-cancel-all">Cancel All</button>
+            </div>
+          </div>
+        </h1>
+        <span>Leave blank for all orders.</span>
+        <br>
+        <div id="order-list" class="row">
+          
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      require('./renderer-process/trading/get-orders')
+    </script>
+
+  </section>
+</template>

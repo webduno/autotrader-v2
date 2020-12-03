@@ -1,0 +1,223 @@
+/* ---------------------------------------------------- MARGIN ---------------------------------------------------- */
+/* ALL */ 			.ma-0 { margin: 0 !important}
+					.ma-1 { margin: 5px !important}
+					.ma-2 { margin: 10px !important}
+					.ma-3 { margin: 15px !important}
+					.ma-4 { margin: 20px !important}
+					.ma-5 { margin: 25px !important}
+					.ma-6 { margin: 30px !important}
+/* HORIZONTAL */
+.mx-0 { margin-left: 0 !important ; margin-right: 0 !important}
+.mx-1 { margin-left: 5px !important ; margin-right: 5px !important}
+.mx-2 { margin-left: 10px !important ; margin-right: 10px !important}
+.mx-3 { margin-left: 15px !important ; margin-right: 15px !important}
+.mx-4 { margin-left: 20px !important ; margin-right: 20px !important}
+.mx-5 { margin-left: 25px !important ; margin-right: 25px !important}
+.mx-6 { margin-left: 30px !important ; margin-right: 30px !important}
+/* VERTICAL */
+.my-0 { margin-top: 0 !important ; margin-bottom: 0 !important}
+.my-1 { margin-top: 5px !important ; margin-bottom: 5px !important}
+.my-2 { margin-top: 10px !important ; margin-bottom: 10px !important}
+.my-3 { margin-top: 15px !important ; margin-bottom: 15px !important}
+.my-4 { margin-top: 20px !important ; margin-bottom: 20px !important}
+.my-5 { margin-top: 25px !important ; margin-bottom: 25px !important}
+.my-6 { margin-top: 30px !important ; margin-bottom: 30px !important}
+/* LEFT */ 			.ml-0 { margin-left: 0 !important}
+					.ml-1 { margin-left: 5px !important}
+					.ml-2 { margin-left: 10px !important}
+					.ml-3 { margin-left: 15px !important}
+					.ml-4 { margin-left: 20px !important}
+					.ml-5 { margin-left: 25px !important}
+					.ml-6 { margin-left: 30px !important}
+/* RIGHT */ 		.mr-0 { margin-right: 0 !important}
+					.mr-1 { margin-right: 5px !important}
+					.mr-2 { margin-right: 10px !important}
+					.mr-3 { margin-right: 15px !important}
+					.mr-4 { margin-right: 20px !important}
+					.mr-5 { margin-right: 25px !important}
+					.mr-6 { margin-right: 30px !important}
+/* TOP */ 			.mt-0 { margin-top: 0 !important}
+					.mt-1 { margin-top: 5px !important}
+					.mt-2 { margin-top: 10px !important}
+					.mt-3 { margin-top: 15px !important}
+					.mt-4 { margin-top: 20px !important}
+					.mt-5 { margin-top: 25px !important}
+					.mt-6 { margin-top: 30px !important}
+/* BOTTOM */ 		.mb-0 { margin-bottom: 0 !important}
+					.mb-1 { margin-bottom: 5px !important}
+					.mb-2 { margin-bottom: 10px !important}
+					.mb-3 { margin-bottom: 15px !important}
+					.mb-4 { margin-bottom: 20px !important}
+					.mb-5 { margin-bottom: 25px !important}
+					.mb-6 { margin-bottom: 30px !important}
+
+/* ---------------------------------------------------- PADDING ---------------------------------------------------- */
+/* ALL */ 			.pa-0 { padding: 0 !important}
+					.pa-1 { padding: 5px !important}
+					.pa-2 { padding: 10px !important}
+					.pa-3 { padding: 15px !important}
+					.pa-4 { padding: 20px !important}
+					.pa-5 { padding: 25px !important}
+					.pa-6 { padding: 30px !important}
+/* HORIZONTAL */
+.px-0 { padding-left: 0 !important; padding-right: 0 !important}
+.px-1 { padding-left: 5px !important; padding-right: 5px !important}
+.px-2 { padding-left: 10px !important; padding-right: 10px !important}
+.px-3 { padding-left: 15px !important; padding-right: 15px !important}
+.px-4 { padding-left: 20px !important; padding-right: 20px !important}
+.px-5 { padding-left: 25px !important; padding-right: 25px !important}
+.px-6 { padding-left: 30px !important; padding-right: 30px !important}
+/* VERTICAL */
+.py-0 { padding-top: 0 !important; padding-bottom: 0 !important}
+.py-1 { padding-top: 5px !important; padding-bottom: 5px !important}
+.py-2 { padding-top: 10px !important; padding-bottom: 10px !important}
+.py-3 { padding-top: 15px !important; padding-bottom: 15px !important}
+.py-4 { padding-top: 20px !important; padding-bottom: 20px !important}
+.py-5 { padding-top: 25px !important; padding-bottom: 25px !important}
+.py-6 { padding-top: 30px !important; padding-bottom: 30px !important}
+/* LEFT */ 			.pl-0 { padding-left: 0 !important}
+					.pl-1 { padding-left: 5px !important}
+					.pl-2 { padding-left: 10px !important}
+					.pl-3 { padding-left: 15px !important}
+					.pl-4 { padding-left: 20px !important}
+					.pl-5 { padding-left: 25px !important}
+					.pl-6 { padding-left: 30px !important}
+/* RIGHT */ 		.pr-0 { padding-right: 0 !important}
+					.pr-1 { padding-right: 5px !important}
+					.pr-2 { padding-right: 10px !important}
+					.pr-3 { padding-right: 15px !important}
+					.pr-4 { padding-right: 20px !important}
+					.pr-5 { padding-right: 25px !important}
+					.pr-6 { padding-right: 30px !important}
+/* TOP */ 			.pt-0 { padding-top: 0 !important}
+					.pt-1 { padding-top: 5px !important}
+					.pt-2 { padding-top: 10px !important}
+					.pt-3 { padding-top: 15px !important}
+					.pt-4 { padding-top: 20px !important}
+					.pt-5 { padding-top: 25px !important}
+					.pt-6 { padding-top: 30px !important}
+/* BOTTOM */ 		.pb-0 { padding-bottom: 0 !important}
+					.pb-1 { padding-bottom: 5px !important}
+					.pb-2 { padding-bottom: 10px !important}
+					.pb-3 { padding-bottom: 15px !important}
+					.pb-4 { padding-bottom: 20px !important}
+					.pb-5 { padding-bottom: 25px !important}
+					.pb-6 { padding-bottom: 30px !important}
+
+/* ---------------------------------------------------- MEDIA EASY DISPLAY ---------------------------------------------------- */
+/*/
+ * - med-xs: Only Extra Small 	(0 - 576px)
+ * - med-sm: Only Small 		(576px - 768px)
+ * - med-md: Only Medium 		(768px - 992px)
+ * - med-lg: Only Large 		(992px - 1280px)
+ * - med-xl: Only Extra Large	(1280px - infinity)
+ *
+ * - med-xs_sm: From Extra Small to Small 	(0 - 768px)
+ * - med-xs_md: From Extra Small to Medium 	(0 - 992px)
+ * - med-xs_lg: From Extra Small to Large 	(0 - 1280px)
+ * - med-sm_md: From Small to Medium 		(576px - 992px)
+ * - med-sm_lg: From Small to Large 			(576px - 1280px)
+ * - med-md_lg: From Medium to Large 		(768px - 1280px)
+ *
+ * - med-sm_x: From Small to Infinity 		(576px - 768px)
+ * - med-md_x: From Medium to Infinity 		(768px - 992px)
+ * - med-lg_x: From Large to Infinity 		(992px - 1280px)
+ *
+ * - med-xs-md: Extra Small and Medium 	 		(0 - 576px / 768px - 992px)
+ * - med-xs-lg: Extra Small and Large 	 		(0 - 576px / 992px - 1280px)
+ * - med-xs-xl: Extra Small and Extra Large 	(0 - 576px / 1280px - infinity)
+ *
+ * - med-sm-lg: Small and Large 	 			(576px - 768px / 992px - 1280px)
+ * - med-sm-xl: Small and Extra Large 			(576px - 768px / 1280px - infinity)
+ *
+ * - med-md-xl: Medium and Extra Large 			(768px - 992px / 1280px - infinity)
+ *
+ * - med-xs_sm-lg: From Extra Small to Small and Large 			(0 - 768px / 992px - 1280px)
+ * - med-xs_sm-xl: From Extra Small to Small and Extra Large 	(0 - 768px / 1280px - infinity)
+ *
+ * - med-xs_md-xl: Extra Small to Medium and Extra Large 	 	(0 - 992px / 1280px - infinity)
+ *
+ * - med-sm-lg_x: Small and From Large to Infinity 		 	 	(0 - 992px / 1280px - infinity)
+/*/
+
+/* Only Extra Small */
+@media only screen and (min-width: 0577px) { .med-xs { display: none !important } }
+/* Only Small */
+@media only screen and (max-width: 0576px) { .med-sm { display: none !important } }
+@media only screen and (min-width: 0769px) { .med-sm { display: none !important } }
+/* Only Medium */
+@media only screen and (max-width: 0768px) { .med-md { display: none !important } }
+@media only screen and (min-width: 0993px) { .med-md { display: none !important } }
+/* Only Large */
+@media only screen and (max-width: 0992px) { .med-lg { display: none !important } }
+@media only screen and (min-width: 1281px) { .med-lg { display: none !important } }
+/* Only Extra Large */
+@media only screen and (max-width: 1280px) { .med-xl { display: none !important } }
+
+/* From Extra Small to Small */
+@media only screen and (min-width: 0769px) { .med-xs_sm { display: none !important } }
+/* From Extra Small to Medium */
+@media only screen and (min-width: 0993px) { .med-xs_md { display: none !important } }
+/* From Extra Small to Large */
+@media only screen and (min-width: 1281px) { .med-xs_lg { display: none !important } }
+
+/* From Small to Medium */
+@media only screen and (max-width: 0576px) { .med-sm_md { display: none !important } }
+@media only screen and (min-width: 0993px) { .med-sm_md { display: none !important } }
+/* From Small to Large */
+@media only screen and (max-width: 0576px) { .med-sm_lg { display: none !important } }
+@media only screen and (min-width: 1281px) { .med-sm_lg { display: none !important } }
+/* From Small to Infinity */
+@media only screen and (max-width: 0576px) { .med-sm_x { display: none !important } }
+
+/* From Medium to Large */
+@media only screen and (max-width: 0768px) { .med-md_lg { display: none !important } }
+@media only screen and (min-width: 1281px) { .med-md_lg { display: none !important } }
+/* From Medium to Infinity */
+@media only screen and (max-width: 0768px) { .med-md_x { display: none !important } }
+
+/* From Large to Infinity */
+@media only screen and (max-width: 0992px) { .med-lg_x { display: none !important } }
+
+/* Extra Small and Medium */
+@media only screen and (min-width: 0577px) { .med-xs-md { display: none !important } }
+@media only screen and (max-width: 0768px) { .med-xs-md { display: none !important } }
+@media only screen and (min-width: 0993px) { .med-xs-md { display: none !important } }
+/* Extra Small and Large */
+@media only screen and (min-width: 0577px) { .med-xs-lg { display: none !important } }
+@media only screen and (max-width: 0992px) { .med-xs-lg { display: none !important } }
+@media only screen and (min-width: 1281px) { .med-xs-lg { display: none !important } }
+/* Extra Small and Extra Large */
+@media only screen and (min-width: 0577px) { .med-xs-xl { display: none !important } }
+@media only screen and (max-width: 1280px) { .med-xs-xl { display: none !important } }
+
+/* Small and Large */
+@media only screen and (max-width: 0576px) { .med-sm-lg { display: none !important } }
+@media only screen and (min-width: 0769px) { .med-sm-lg { display: none !important } }
+@media only screen and (max-width: 0992px) { .med-sm-lg { display: none !important } }
+@media only screen and (min-width: 1281px) { .med-sm-lg { display: none !important } }
+/* Small and Extra Large */
+@media only screen and (max-width: 0576px) { .med-sm-xl { display: none !important } }
+@media only screen and (min-width: 0769px) { .med-sm-xl { display: none !important } }
+@media only screen and (max-width: 1280px) { .med-sm-xl { display: none !important } }
+
+/* Medium and Extra Large */
+@media only screen and (max-width: 0768px) { .med-md-xl { display: none !important } }
+@media only screen and (min-width: 0993px) { .med-md-xl { display: none !important } }
+@media only screen and (max-width: 1280px) { .med-md-xl { display: none !important } }
+
+/* From Extra Small to Small and Large */
+@media only screen and (min-width: 0769px) { .med-xs_sm-lg { display: none !important } }
+@media only screen and (max-width: 0992px) { .med-xs_sm-lg { display: none !important } }
+@media only screen and (min-width: 1281px) { .med-xs_sm-lg { display: none !important } }
+/* From Extra Small to Small and Extra Large */
+@media only screen and (min-width: 0769px) { .med-xs_sm-xl { display: none !important } }
+@media only screen and (max-width: 1280px) { .med-xs_sm-xl { display: none !important } }
+
+/* From Extra Small to Medium and Extra Large */
+@media only screen and (min-width: 0993px) { .med-xs_md-xl { display: none !important } }
+@media only screen and (max-width: 1280px) { .med-xs_md-xl { display: none !important } }
+
+/* Small and From Large to Infinity */
+@media only screen and (max-width: 0576px) { .med-sm-lg_x { display: none !important } }
+@media only screen and (min-width: 0769px) and (max-width: 0992px) { .med-sm-lg_x { display: none !important } }
