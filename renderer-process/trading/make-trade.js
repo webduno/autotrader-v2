@@ -19,6 +19,7 @@ class makeTradeController {
     }, options);
 
     this.data = Object.assign({
+      leverage: 100,
       lastPrice: {},
       lastPayload: {},
       lastDataQueryString: "",
@@ -88,7 +89,7 @@ class makeTradeController {
             self.form.side,
             self.form.quantity.value,
             price,
-            50,
+            self.data.leverage,
             [self.form.profit.value,self.form.loss.value],
             self.form.force,
             self.form.makeTrade.checked)
@@ -97,7 +98,7 @@ class makeTradeController {
         self.formCard.price.innerHTML = tradeResponse.data.bidPrice;
         document.getElementById('card-label-price1').innerHTML = tradeResponse.data.bidPrice;
         self.formCard.quantity.innerHTML = tradeResponse.data.quantity;
-        self.formCard.balance.innerHTML = ((tradeResponse.data.quantity * tradeResponse.data.bidPrice) / 50).toFixed(2);
+        self.formCard.balance.innerHTML = ((tradeResponse.data.quantity * tradeResponse.data.bidPrice) / self.data.leverage).toFixed(2);
 
         self.formCard.loss_price.innerHTML = self.form.loss.value == 0 ? "-" : tradeResponse.data.lossPrice;
         self.formCard.loss_balance.innerHTML = self.form.loss.value == 0 ? "-" : (tradeResponse.data.lossBalance>0 ? "- " : "+ ") + tradeResponse.data.lossBalance.toFixed(2);
@@ -520,8 +521,8 @@ let tradeEvent = (event) =>
           <span>${data.pnl.profitPrice}</span>
         </span>
         <span class="col-xs">${data.pnl.profitAmount}</span>
-        <span class="col-xs">+$${((data.pnl.profitPercent * 50) / 100) * quantity}</span>
-        <span class="col-xs">+$${parseInt(data.pnl.profitPercent * 50)}%</span>
+        <span class="col-xs">+$${((data.pnl.profitPercent * self.data.leverage) / 100) * quantity}</span>
+        <span class="col-xs">+$${parseInt(data.pnl.profitPercent * self.data.leverage)}%</span>
       </div>`;
     } else {
       tradeMsg.innerHTML += `
@@ -533,7 +534,7 @@ let tradeEvent = (event) =>
         <span class="col-xs demo-meta">-</span>
       </div>`;
     }
-        // <span class="col-xs">${data.pnl.profitPercent * 50}% * ${quantity}</span>
+        // <span class="col-xs">${data.pnl.profitPercent * self.data.leverage}% * ${quantity}</span>
 
     if (makeTradeCheckbox.checked)
     {
@@ -571,8 +572,8 @@ let tradeEvent = (event) =>
           <span>${data.pnl.lossPrice}</span>
         </span>
         <span class="col-xs">${data.pnl.lossAmount}</span>
-        <span class="col-xs">-$${((data.pnl.lossPercent * 50) / 100) * quantity}</span>
-        <span class="col-xs">+$${parseInt(data.pnl.lossPercent * 50)}%</span>
+        <span class="col-xs">-$${((data.pnl.lossPercent * self.data.leverage) / 100) * quantity}</span>
+        <span class="col-xs">+$${parseInt(data.pnl.lossPercent * self.data.leverage)}%</span>
       </div>`;
     } else {
       tradeMsg.innerHTML += `

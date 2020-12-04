@@ -19,9 +19,10 @@ function initialize () {
 
   function createWindow () {
     const windowOptions = {
-      width: 1080,
-      minWidth: 680,
-      height: 840,
+      width: 968,
+      minWidth: 968,
+      height: 720,
+      minWidth: 720,
       title: app.getName(),
       webPreferences: {
         nodeIntegration: true
