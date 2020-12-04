@@ -1,4 +1,4 @@
-\renderer-process\trading\keySet\*
+\renderer-process\trading\keySet.js
 node_modules
 out
 npm-debug.log
